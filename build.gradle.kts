@@ -31,6 +31,14 @@ subprojects {
     }
 }
 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+
 tasks {
     withType<DependencyUpdatesTask>().configureEach {
         rejectVersionIf {

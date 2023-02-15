@@ -16,7 +16,7 @@ junit = "4.13.2"
 kotlin = "1.7.0"
 ktlint = "0.45.2"
 ktlint_gradle = "10.2.1"
-min_sdk_version = "21"
+min_sdk_version = "23"
 target_sdk_version = "33"
 benmanesversion = "0.45.0"
 

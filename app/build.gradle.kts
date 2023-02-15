@@ -56,13 +56,17 @@ android {
 }
 
 dependencies {
-    implementation(projects.libraryAndroid)
-    implementation(projects.libraryCompose)
-    implementation(projects.libraryKotlin)
-
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraint.layout)
     implementation(libs.androidx.core.ktx)
+
+    implementation("io.github.g00fy2.quickie:quickie-bundled:1.6.0")
+
+    implementation(platform("com.walletconnect:android-bom:1.4.1"))
+    implementation("com.walletconnect:android-core")
+    implementation("com.walletconnect:web3wallet")
+
+//    implementation("com.google.code.gson:gson:2.10.1")
 
     testImplementation(libs.junit)
 
